@@ -1,0 +1,169 @@
+.dci-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Sola hizalama */
+  background-color: var(--bg-modal);
+  color: var(--text-primary);
+  padding: 40px 20px;
+}
+
+.dci-title {
+  margin: 0 0 30px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: left; /* Sola yasla */
+}
+
+@media screen and (min-width: 768px) {
+  .dci-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+}
+
+.dci-main-result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Sola yasla */
+  margin-bottom: 40px;
+}
+
+.dci-calories {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  color: #264061;
+}
+
+[data-theme='dark'] .dci-calories {
+  color: #529af1;
+}
+
+.dci-calories-unit {
+  font-size: 16px;
+  color: inherit;
+  margin-left: 5px;
+}
+
+/* Macro Cards Section */
+.dci-macros-grid {
+  display: flex;
+  justify-content: flex-start; /* Sola yasla */
+  gap: 15px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.macro-card {
+  flex: 1;
+  max-width: 100px;
+  padding: 15px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: left; /* Sola yasla */
+  transition: transform 0.3s ease;
+}
+
+.macro-card:hover {
+  transform: translateY(-5px);
+  background: rgba(252, 132, 45, 0.05);
+}
+
+.macro-val {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.macro-val.protein { color: #ff6b6b; }
+.macro-val.carbs { color: #4ecdc4; }
+.macro-val.fat { color: #ffd166; }
+
+.macro-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+}
+
+.dci-line {
+  margin: 0 0 30px; /* Sola yasla */
+  width: 100%;
+  max-width: 330px;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.dci-products-section {
+  width: 100%;
+  max-width: 330px;
+  margin: 0; /* Sola yasla */
+  text-align: left;
+}
+
+.dci-products-heading {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dci-products-list {
+  padding: 0;
+  margin: 0 0 40px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.dci-products-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.dci-products-list li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: var(--main-orange);
+  font-weight: bold;
+}
+
+.dci-actions {
+  display: flex;
+  justify-content: flex-start; /* Sola yasla */
+}
+
+.dci-button {
+  padding: 13px 40px;
+  border: none !important;
+  border-radius: 30px;
+  background-color: #fc842d !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(252, 132, 45, 0.4);
+}
+
+.dci-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(252, 132, 45, 0.6);
+  background-color: #ff6b08 !important;
+}
+
+.dci-link {
+  color: #fff;
+  text-decoration: none;
+}
+
